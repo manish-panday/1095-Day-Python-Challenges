@@ -1,0 +1,169 @@
+Day 6 of 1095
+Topic
+
+Nested if Statements & Input Validation
+
+Review Concepts: Variables, input(), int(), if, elif, else, comparison operators, and arithmetic from Days 1–5.
+
+Python Coding Challenge: ATM Withdrawal System
+Background
+
+You have been hired to develop the first version of an ATM system.
+
+The ATM should decide whether a customer is allowed to withdraw money based on their account balance and the amount they want to withdraw.
+
+Requirements
+
+Write a Python program that:
+
+Step 1
+
+Ask the user to enter:
+Customer name
+Current account balance
+Withdrawal amount
+
+Convert the balance and withdrawal amount to float.
+
+Step 2
+
+Use nested if statements to check the following conditions in order:
+
+Condition 1
+
+If the withdrawal amount is less than or equal to 0,
+
+Display:
+
+Invalid withdrawal amount.
+
+Do not continue checking other conditions.
+
+Condition 2
+
+If the withdrawal amount is greater than the account balance,
+
+Display:
+
+Insufficient balance.
+Condition 3
+
+Otherwise,
+
+Calculate the remaining balance.
+
+Display:
+
+Withdrawal Successful!
+Step 3
+
+Print a transaction receipt.
+
+Example Output
+Successful Withdrawal
+========== ATM RECEIPT ==========
+
+Customer: Manish Panday
+
+Current Balance: 5000
+Withdrawal Amount: 1200
+
+Status: Withdrawal Successful
+
+Remaining Balance: 3800
+
+=================================
+Insufficient Balance
+========== ATM RECEIPT ==========
+
+Customer: Manish Panday
+
+Current Balance: 5000
+
+Withdrawal Amount: 7000
+
+Status: Insufficient Balance
+
+=================================
+Invalid Amount
+========== ATM RECEIPT ==========
+
+Customer: Manish Panday
+
+Withdrawal Amount: -500
+
+Status: Invalid Withdrawal Amount
+
+=================================
+Constraints
+
+Use only:
+
+Variables
+input()
+float()
+print()
+if
+elif
+else
+At least one nested if statement
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Tuples
+Sets
+Exception handling
+Modules
+Bonus Challenge
+
+Add another condition.
+
+If the remaining balance is less than 1000, display:
+
+Warning: Low Balance
+Hints
+Think carefully about the order of your conditions.
+Validate the withdrawal amount before checking the balance.
+Use a variable to store the transaction status.
+Print the receipt only once after all decisions have been made.
+Skills You'll Practice
+Nested if statements
+Decision making
+Input validation
+Working with float
+Variables
+Clean program structure
+Real-world business logic
+Real-World Connection
+
+ATM software, banking apps, and payment gateways all follow a similar pattern:
+
+Receive Input
+       ↓
+Validate Input
+       ↓
+Check Business Rules
+       ↓
+Process Transaction
+       ↓
+Display Result
+
+This challenge introduces you to business logic, a core part of software engineering.
+
+Rules
+Solve the problem using your own logic.
+Follow PEP 8 naming conventions (snake_case).
+Avoid duplicating print() statements.
+Store values like status and remaining_balance in variables before printing.
+
+Progress Tracker
+
+Completed Days: 5
+Current Day: 6
+Remaining Days: 1,089
+Completion: 0.55%
+Current Stage: Stage 1 – Python Fundamentals

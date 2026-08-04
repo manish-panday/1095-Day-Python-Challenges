@@ -1,0 +1,96 @@
+9Day 3 of 1095
+Topic 
+User input, data types, type conversion, and basic arithmetics
+
+Review Concepts: Variables, input(), print(), and data types from Day1 and Day 2.
+
+Python coding challenge:Student Marks calculator
+
+Background
+A school wants a simple program that helps students calculate their total marks and average score after exam.
+
+task is to build the forst versions of this calculator.
+
+requirements:
+write a python program that
+Ask the user to enter:
+student's full name
+Marks for mathematics
+marks for science
+marks for english
+
+Convert all marks to integers.
+
+Calculate 
+total marks 
+average marks
+
+Display the result in a next report.
+
+Constraints 
+Use only
+variables
+input()
+print()
+arithmetic operator(+,/)
+
+Do not use:
+if statements
+loops
+functionns 
+lists
+directories 
+tuples 
+sets
+modules
+
+example input:
+Enter student's full name: Manish Panday
+Enter Mathematics marks: 85
+Enter Science marks: 90
+Enter English marks: 80
+
+Example Output:
+========== STUDENT REPORT ==========
+
+Student: Manish Panday
+
+Mathematics: 85
+Science: 90
+English: 80
+
+Total Marks: 255
+Average Marks: 85.0
+
+===================================
+
+Bonus Challenge
+
+Without using any if statements:
+
+Calculate the percentage assuming the total possible marks are 300.
+Display the percentage rounded to 2 decimal places.
+
+Example:
+
+Percentage: 85.00%
+
+Hint: You'll need to do a calculation and explore how to format the output.
+
+Skills pratices:
+variables
+input()
+type conversions with int()
+arithmetic operators
+stroing calculated values in variables.
+producing clean, readable output
+
+
+Rules:
+write the solution entirely on your own.
+do not search for the answer.
+do not use Ai to generate the code.
+follow PEP 8 naming conventions (snake_case)
+think like a programmes: break the problem into small steps before writing code.
+
+Thank you!!!!!!!!!!!!

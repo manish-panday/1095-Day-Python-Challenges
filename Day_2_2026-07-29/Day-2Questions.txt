@@ -1,0 +1,61 @@
+Day 2 of 1095 (2026-07-290)
+Topic 
+User input, variables and output
+
+Python Coding Challenge:Student ID Generator 
+Background 
+A school wants a simple program that creates a student's 
+profile from information entered by the user.
+
+Instead of hardcoding the values (like in Day 1) your program
+should ask the user from the informationn when it runs.
+
+Requirements:
+Write a python program that:
+1. Ask the user to enter.
+Full Name 
+Age
+Country
+Grade 
+Favroite Subjects
+
+2. Stores each values in an appropriate variables.
+3. Display the information in a neatly formatted students Profile card.
+4. Prints a welcom massage using the student's name.
+
+Constraints.
+Use the input() functions for every piece of information.
+Store all the inputs in variables before printing.
+Do not use loop.
+Do not use functions.
+Do not use lists, dictionaries, tuples or sets.
+Do not hardcode the user's information.
+
+Example output:
+========== STUDENT PROFILE ==========
+
+Welcome, Manish Panday!
+
+Name: Manish Panday
+Age: 19
+Country: Nepal
+Grade: 12
+Favorite Subject: Computer Science
+
+=====================================
+
+Hints:
+Every call to input() returns a string.
+Use meaningful variable names.
+Create a blank line using print().
+Print lables such as Name: and Age: instead of only the values
+
+Bonus Challenge 
+Ask the user for their birth year.
+
+Then calculated and display the approximate age automatically.
+
+(Assume the current year is 2026).
+
+Donot search on the internet or use date libraries-just use simple arithmetic.
+

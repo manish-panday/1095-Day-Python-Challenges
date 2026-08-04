@@ -1,0 +1,51 @@
+Python Coding Challenge: Personal Introduction Card
+Background
+
+You are building a small program that generates a personal introduction card for a student. The information should be stored in variables and then displayed neatly.
+
+Requirements:
+
+Write a Python program that,
+Creates variables to store:
+Full name
+Age
+Country
+Favorite programming language
+Dream job
+Height (decimal number)
+Whether the student likes Python (True or False)
+Prints the information in a clean, readable format.
+Every value must first be stored in a variable before being printed.
+Do not use input().
+Follow PEP 8 naming conventions.
+Constraints
+Use only variables and print().
+Do not use loops, functions, lists, dictionaries, or classes.
+Do not hardcode all values directly inside print().
+Example Output
+========== PERSONAL INTRODUCTION ==========
+
+Name : Alex Johnson
+Age : 18
+Country : Nepal
+Favorite Language : Python
+Dream Job : AI Engineer
+Height : 5.9
+Likes Python : True
+
+===========================================
+
+Your values can be different.
+
+Hints
+Use descriptive variable names.
+Strings require quotation marks.
+Height should be a float.
+Boolean values are True or False.
+Bonus Challenge
+
+Create an additional variable called years_until_goal.
+
+Assume your age is stored in a variable and your goal is to become a professional developer at age 25.
+
+Calculate the value using Python (do not manually type the answer), then print it.

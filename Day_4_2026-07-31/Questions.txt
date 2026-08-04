@@ -1,0 +1,87 @@
+Day 4 of 1905
+Topic 
+If statements & comparison operators
+
+Review concept: Variables, inptu(), type conversion (int()), arithmetic operators, and formatted output from days 1-3
+
+Python coding challenge:Pass or fail checker 
+
+Background 
+A school wants a simple program that determines whether a students has passed or failed based on their exam marks.
+
+task is to build the first version of this grading system.
+
+Requirements:
+write a python program that.
+Ask the user to enter.
+student's full name 
+marks (0-100)
+converts the marks to an integers.
+
+use an if statements to determine.
+if the marks are 40 or above, display "Pass".
+otherwise display "fail".
+display the student's report neatly.
+
+Constraints.
+Use 
+variables 
+input()
+print()
+int()
+one if.... else statements 
+comparison operators (>=, <)
+
+donot use
+loops 
+functions 
+lists
+dictionaries
+tuples
+sets
+modules 
+elif 
+
+Example input
+Enter student's full name: Manish Panday 
+Enter exam marks: 80
+
+Exapmle output(Pass):
+========== RESULT ==========
+
+Student: Manish Panday
+Marks: 80
+Status: Pass
+
+============================
+
+Example Output(Fail):
+========== RESULT ==========
+
+Student: Manish Panday
+Marks: 32
+Status: fail
+
+============================
+
+Bonus Challenges:
+Add another if statements to display a congratulatory massage only if the students scores 90 or avobe 
+
+Outstanding Performance 
+Do this without using elif.
+
+Skills you'll pratice 
+
+taking user input
+converting strings to integers 
+using if.... else 
+using comparison operators 
+making decisions in code 
+formatting output 
+
+Rules 
+solve the challenge using your own logic 
+follow PEP 8 naming conventions (snake_case)
+do not copy the code form ai or an internet 
+think through the logic before writing your program code 
+

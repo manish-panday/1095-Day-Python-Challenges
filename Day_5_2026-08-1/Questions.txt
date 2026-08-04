@@ -1,0 +1,105 @@
+Day 5 0f 1095
+Topic 
+Multiple conditions with if, elif, and else
+
+Review concepts: Variables, input(), print(), int(), arithmetic operators, comparison,operators, and if....else from day 1-4
+
+Python coding challenge: Student grade calculator 
+Background 
+Your school wants to upgrade its grading system.
+
+insted of simply showing Pass or Fail, the program should assign a letter grade based on the student's marks.
+
+your task is to build thiss grading system.
+
+Requiremtnts:
+write a python program that:
+Asks the user to enter:
+student's full name
+exam marks(0-100)
+
+convert the marks to an integer.
+determine the student's grade using if, elif and else.
+
+use the following grading system 
+makrs 90-100 grade A+
+makrs 80-89 grade A
+marks 70-79 grade B
+60-69 C
+50-59 D
+below 40 U
+
+Display 
+Student name 
+marks
+grade 
+
+constraints Use:
+variables
+input()
+print()
+int()
+if 
+elif 
+else 
+comparision operator (>=, <)
+
+Do not use:
+loop 
+functions 
+lists 
+dictionaries 
+tuples 
+sets
+modules 
+much statements 
+
+Example input:
+Enter student's full name: Manish Panday
+Enter exam marks: 86
+
+Example Output:
+========== STUDENT GRADE ==========
+
+Student: Manish Panday
+Marks: 86
+Grade: A
+
+==================================
+
+
+Bonus Challenge
+
+Add one more field called Remark.
+
+Use the grade to display one of these messages:
+
+Grade	Remark
+A+	Outstanding
+A	Excellent
+B	Very Good
+C	Good
+D	Needs Improvement
+F	Failed
+
+Example:
+
+Remark: Excellent
+
+Skills you'll practice 
+if, elif, and else 
+multiple conditionn 
+comparison operators 
+decision making 
+variables 
+user input 
+clean output foramtting 
+
+Rules 
+solve the challenge using your own logic 
+follow snake_case 
+avoid repeating the same print() statements in every condition if possible 
+think abou assiging values to variables first then printing the report onec.
+
+
+Done!!!
