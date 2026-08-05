@@ -1,0 +1,189 @@
+Day 7 of 1095
+Topic
+
+Logical Operators (and, or, not)
+
+Review Concepts: Variables, input(), float(), int(), if, elif, else, nested if statements, and comparison operators from Days 1–6.
+
+Python Coding Challenge: Movie Ticket Eligibility System
+Background
+
+A movie theater is introducing a new ticketing system.
+
+To watch a movie, a customer must meet certain age requirements. If they are under the required age, they can still watch the movie only if they are accompanied by a parent.
+
+Your task is to build this eligibility checker.
+
+Requirements
+
+Write a Python program that asks the user for:
+
+Customer's full name
+Customer's age
+Whether they are accompanied by a parent (yes or no)
+
+Store each value in a variable.
+
+Eligibility Rules
+
+Use logical operators (and, or, not) to determine the result.
+
+Rule 1
+
+If the customer is 18 or older, they are allowed to watch the movie.
+
+Status:
+
+Allowed
+Rule 2
+
+If the customer is under 18 but is accompanied by a parent, they are also allowed.
+
+Status:
+
+Allowed (With Parent)
+Rule 3
+
+Otherwise,
+
+Status:
+
+Not Allowed
+Example 1
+Input
+Name: Manish
+Age: 20
+Parent: no
+Output
+========== MOVIE TICKET ==========
+
+Customer: Manish
+Age: 20
+
+Parent Present: No
+
+Status: Allowed
+
+==============================
+Example 2
+Input
+Name: Manish
+Age: 15
+Parent: yes
+Output
+========== MOVIE TICKET ==========
+
+Customer: Manish
+Age: 15
+
+Parent Present: Yes
+
+Status: Allowed (With Parent)
+
+==============================
+Example 3
+Input
+Name: Manish
+Age: 14
+Parent: no
+Output
+========== MOVIE TICKET ==========
+
+Customer: Manish
+Age: 14
+
+Parent Present: No
+
+Status: Not Allowed
+
+==============================
+Constraints
+
+Use:
+
+Variables
+input()
+print()
+int()
+if
+elif
+else
+Comparison operators
+Logical operators (and, or, not)
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Tuples
+Sets
+Modules
+Exception handling
+Bonus Challenge
+
+The theater has a VIP Fast Pass.
+
+Ask the user:
+
+Do you have a VIP Pass? (yes/no)
+
+Then apply these rules:
+
+If the customer has a VIP Pass, they are always allowed, regardless of age or parent.
+Otherwise, use the normal rules.
+
+This challenge is designed to help you practice combining or with existing conditions.
+
+Hints
+Convert the user's yes/no input to lowercase using .lower() before comparing it.
+Think carefully about when to use and versus or.
+Store the final result in a status variable before printing the receipt.
+Try to print the report only once.
+Skills You'll Practice
+Logical operators (and, or, not)
+Combining multiple conditions
+Decision making
+String handling with .lower()
+Writing cleaner conditional logic
+Real-World Connection
+
+Logical operators are used in almost every software system:
+
+Login authentication
+Banking security checks
+School admission systems
+E-commerce discount eligibility
+AI rule-based decision systems
+Hospital patient triage
+Airport security
+
+Being comfortable with and, or, and not is a major step toward writing more powerful programs.
+
+Rules
+Solve the challenge using your own logic.
+Follow PEP 8 naming conventions (snake_case).
+Avoid duplicating code where possible.
+Do not ask for the solution immediately.
+
+Progress Tracker
+
+Completed Days: 6
+Current Day: 7
+Remaining Days: 1,088
+Completion: 0.64%
+Current Stage: Stage 1 – Python Fundamentals
+Mentor's Challenge
+
+Today's challenge introduces the three logical operators that you'll use throughout your programming career.
+
+Before you write any code, answer these questions on paper:
+
+When should you use and?
+When should you use or?
+When should you use not?
+
+If you can explain those three operators clearly, writing the code becomes much easier.
+
+Good luck! I look forward to reviewing your Day 7 solution.
