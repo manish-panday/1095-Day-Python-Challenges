@@ -1,0 +1,212 @@
+Day 8 of 1095
+Today's Topic
+
+Boolean Logic (and, or, not) & Multi-Condition Decision Making
+
+Spaced Repetition: This challenge revisits if, elif, else, nested if statements, comparison operators, .lower(), and logical operators from Days 4–7.
+
+Python Coding Challenge: School Library Membership Checker
+Background
+
+A school library is introducing a new membership system.
+
+Not every student is allowed to borrow books. The library has rules based on membership status and overdue books.
+
+Your job is to create a program that determines whether a student is allowed to borrow a book.
+
+Requirements
+
+Write a Python program that asks the user to enter:
+
+Student's full name
+Are you a library member? (yes / no)
+Do you have any overdue books? (yes / no)
+
+Convert both yes/no answers to lowercase before checking them.
+
+Borrowing Rules
+Rule 1
+
+If the student is a library member and has no overdue books:
+
+Status: Allowed to Borrow
+Rule 2
+
+If the student is not a library member:
+
+Status: Membership Required
+Rule 3
+
+If the student is a member but has overdue books:
+
+Status: Return Overdue Books First
+Example 1
+Input
+Enter your full name: Manish Panday
+Are you a library member? yes
+Do you have overdue books? no
+Output
+========== LIBRARY STATUS ==========
+
+Student: Manish Panday
+
+Library Member: Yes
+Overdue Books: No
+
+Status: Allowed to Borrow
+
+====================================
+Example 2
+Input
+Enter your full name: Manish Panday
+Are you a library member? no
+Do you have overdue books? no
+Output
+========== LIBRARY STATUS ==========
+
+Student: Manish Panday
+
+Library Member: No
+Overdue Books: No
+
+Status: Membership Required
+
+====================================
+Example 3
+Input
+Enter your full name: Manish Panday
+Are you a library member? yes
+Do you have overdue books? yes
+Output
+========== LIBRARY STATUS ==========
+
+Student: Manish Panday
+
+Library Member: Yes
+Overdue Books: Yes
+
+Status: Return Overdue Books First
+
+====================================
+Constraints
+
+Use only:
+
+Variables
+input()
+print()
+if
+elif
+else
+Logical operators (and, or, not)
+.lower()
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Tuples
+Sets
+Exception handling
+Modules
+Bonus Challenge
+
+The library has a Teacher Pass.
+
+Ask one more question:
+
+Are you a teacher? (yes/no)
+
+New rule:
+
+If the user is a teacher, they can always borrow books, even if they are not a member or have overdue books.
+
+This bonus is designed to help you practice using the or operator.
+
+Hints
+Convert all yes/no inputs using .lower().
+Decide the status first, then print the report.
+Read each rule carefully before writing your conditions.
+Avoid repeating the same print() statements.
+Skills You'll Practice
+Logical operators (and, or)
+Multi-condition decision making
+String normalization with .lower()
+Writing cleaner conditional logic
+Translating business rules into code
+Real-World Application
+
+Systems like this are used in:
+
+School and university libraries
+Digital book lending platforms
+Equipment checkout systems
+Gym memberships
+Subscription services
+Employee access control
+
+Most software applications check multiple conditions before granting access.
+
+Common Mistakes
+Forgetting to use .lower().
+Mixing up and and or.
+Printing inside every if block instead of once at the end.
+Not following the rules in the correct order.
+Mini Quiz
+
+Don't answer now—just think about these questions.
+
+What is the difference between and and or?
+What does .lower() do?
+Why is it useful to store the result in a status variable?
+When should you use nested if statements instead of elif?
+Why is input normalization important?
+Difficulty Rating
+
+3/10 
+
+Estimated Time
+
+15–25 minutes
+
+Progress Tracker
+Completed Days: 7
+Current Day: 8
+Remaining Days: 1,087
+Completion: 0.73%
+Current Stage: Stage 1 – Python Fundamentals
+Skills Unlocked (After Completion)
+
+By solving this challenge, you'll strengthen:
+
+Boolean logic
+Conditional statements
+String methods
+Decision-making
+Real-world problem solving
+Code Review Reminder
+
+When you submit your solution, I will review:
+
+Correctness
+Logic
+PEP 8 style
+Readability
+Time complexity
+Space complexity
+Edge cases
+Professional code quality (score out of 100)
+Suggestions for cleaner, more Pythonic code
+Mentor's Tip
+
+Before you write any code, create a small decision table:
+
+Library Member	Overdue Books	Expected Status
+Yes	No	Allowed to Borrow
+Yes	Yes	Return Overdue Books First
+No	No	Membership Required
+No	Yes	Membership Required
+
+Planning the logic first will make writing the program much easier. I won't reveal the solution until you submit yours. Good luck! 
