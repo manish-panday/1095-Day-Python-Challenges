@@ -1,0 +1,249 @@
+Day 9 of 1095
+Today's Topic
+
+Multiple Conditions + Arithmetic Calculations
+
+Today we'll combine the concepts you've learned so far and introduce a very important programming pattern:
+
+Calculate → Make Decisions → Display Result
+
+You'll also practice percentage calculations and conditional pricing.
+
+Today's Challenge: Online Shopping Discount Calculator
+Background
+
+You are building a simple checkout system for an online store.
+
+The store gives customers different discounts depending on the amount they spend.
+
+Your program must calculate the discount and final price.
+
+Requirements
+
+Ask the customer for:
+
+Customer's full name
+Product price
+Quantity
+
+Calculate:
+
+Total Price = Product Price × Quantity
+
+Then determine the discount based on the total price.
+
+Discount Rules
+Total Price	Discount
+10,000 or more	20%
+5,000–9,999	10%
+2,000–4,999	5%
+Below 2,000	0%
+
+Then calculate:
+
+Discount Amount = Total Price × Discount / 100
+
+and:
+
+Final Price = Total Price - Discount Amount
+Expected Output
+Example 1
+
+Input:
+
+Enter your full name: Manish Panday
+Enter product price: 3000
+Enter quantity: 2
+
+Output:
+
+========== SHOPPING RECEIPT ==========
+
+Customer: Manish Panday
+
+Product Price: 3000
+Quantity: 2
+
+Total Price: 6000
+Discount: 10%
+Discount Amount: 600
+
+Final Price: 5400
+
+=======================================
+Example 2
+Enter your full name: Manish Panday
+Enter product price: 800
+Enter quantity: 1
+
+Output:
+
+========== SHOPPING RECEIPT ==========
+
+Customer: Manish Panday
+
+Product Price: 800
+Quantity: 1
+
+Total Price: 800
+Discount: 0%
+Discount Amount: 0
+
+Final Price: 800
+
+=======================================
+Constraints
+
+You may use:
+
+Variables
+input()
+int() or float()
+Arithmetic operators
+if
+elif
+else
+Comparison operators
+f-strings
+print()
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Modules
+Exception handling
+Bonus Challenge
+
+Add a VIP customer option.
+
+Ask:
+
+Are you a VIP customer? (yes/no):
+
+VIP customers receive an additional 5% discount.
+
+For example:
+
+Total Price: 6000
+Normal Discount: 10%
+VIP Discount: 5%
+Total Discount: 15%
+Final Price: 5100
+Important:
+
+Don't simply subtract 5 from the final price.
+
+Think carefully about what 5% actually means.
+
+Hints
+Hint 1
+
+Calculate the total before determining the discount.
+
+Hint 2
+
+Store the discount percentage in a variable such as:
+
+discount_percent
+Hint 3
+
+Calculate the discount amount separately.
+
+Hint 4
+
+Try to print the receipt only once.
+
+Hint 5
+
+Think about the order of your if/elif conditions. Start with the highest price range.
+
+Think Before Coding
+
+Create this logic in your head first:
+
+Product Price
+      ↓
+   Quantity
+      ↓
+ Total Price
+      ↓
+Determine Discount
+      ↓
+Discount Amount
+      ↓
+ Final Price
+      ↓
+Print Receipt
+Real-World Application
+
+This exact type of logic is used in:
+
+E-commerce websites
+Payment systems
+Billing software
+POS systems
+Ticket booking systems
+Subscription platforms
+
+Later, when you learn databases, APIs, functions, and classes, you'll be able to turn this simple program into a real checkout system.
+
+Common Mistakes
+
+Watch out for:
+
+Calculating the discount from the product price instead of the total price.
+Forgetting to multiply price × quantity.
+Confusing 10% with 10.
+Subtracting the discount percentage directly from the price.
+Putting the discount conditions in the wrong order.
+Repeating the receipt three or four times.
+Mini Quiz
+
+Don't answer these yet. I'll check them after you respond.
+
+What is the difference between 10 and 10% in a discount calculation?
+Why should we calculate the total price before choosing the discount?
+What happens if the total price is exactly 5,000?
+Why is the discount amount different from the discount percentage?
+What is the formula for calculating the final price?
+Difficulty Rating
+
+4/10
+
+You're moving from simple decision-making toward combining logic + calculations, so this is a small step up from Day 8.
+
+Estimated Time
+
+20–30 minutes
+
+Progress Tracker
+Completed Days: 8
+Current Day: 9
+Remaining Days: 1,086
+Completion: 0.82%
+Current Stage: Stage 1 – Python Fundamentals
+Skills You'll Practice
+
+Today's challenge will strengthen:
+
+Variables
+User input
+int() / float()
+Arithmetic operators
+Percentages
+if
+elif
+else
+Comparison operators
+Conditional business logic
+Receipt formatting
+Mentor Rule
+
+Don't ask me for the solution before attempting it.
+
+Write the program using your own logic, test it with several different prices, and then send me your code.
+
+I'll review every important part of your solution and give you a professional score out of 100. 
