@@ -3,7 +3,7 @@ product_price = float(input("Enter product price: "))
 quantity = int(input("Enter quantity that you want: "))
 
 total_price = int(product_price * quantity)
-discount_ammount = 0 
+discount_amount = 0 
 discount = ""
 
 if total_price >= 10000:
@@ -13,10 +13,10 @@ elif total_price >= 5000 and total_price <= 9999:
     discount_amount = int(total_price * 10 / 100)
     discount = "10%"  
 elif total_price >= 2000 and total_price <= 4999:
-    discount_amout = int(total_price * 5 / 100)
+    discount_amount = int(total_price * 5 / 100)
     discount = "5%"
 elif total_price > 0 and total_price <= 2000:
-    discount_amount = int(total_price * 2 / 100)
+    discount_amount = int(total_price * 0 / 100)
     discount = "0%"
 
 final_price = int(total_price - discount_amount)
@@ -83,3 +83,5 @@ else:
     print("======================================")
 
     #DONE!!!!!!!!!!!!
+    #Updated
+    
