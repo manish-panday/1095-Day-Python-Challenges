@@ -1,0 +1,474 @@
+Day 10 of 1095
+Today's Topic
+Strings + String Methods + Data Validation
+
+For the first 9 days, you've mainly worked with numbers and decisions.
+
+Today we're going deeper into strings.
+
+You'll learn how programs can clean and validate information entered by users.
+
+Learning Objective
+
+By the end of today's challenge, you should understand:
+
+How strings work
+.strip()
+.lower()
+.upper()
+.title()
+len()
+Checking string conditions
+Combining string processing with if/elif/else
+Basic input validation
+
+You'll also practice a very important programming idea:
+
+Never blindly trust user input.
+
+Concept Explanation
+
+Suppose a user enters:
+
+   manish panday
+
+There are unnecessary spaces around the name.
+
+Python can clean it:
+
+name = name.strip()
+
+Now:
+
+manish panday
+.lower()
+
+Converts everything to lowercase:
+
+country = "NEPAL"
+
+print(country.lower())
+
+Output:
+
+nepal
+
+Useful when comparing user input:
+
+if answer.lower() == "yes":
+.upper()
+
+Converts everything to uppercase:
+
+name = "manish"
+
+print(name.upper())
+
+Output:
+
+MANISH
+.title()
+
+Capitalizes the first letter of each word:
+
+name = "manish panday"
+
+print(name.title())
+
+Output:
+
+Manish Panday
+len()
+
+Counts the number of characters:
+
+password = "python123"
+
+print(len(password))
+
+Output:
+
+9
+
+Spaces are also counted as characters.
+
+Warm-up Example
+name = input("Enter your name: ")
+
+name = name.strip()
+name = name.title()
+
+print(f"Welcome, {name}!")
+
+If the user enters:
+
+   manish panday
+
+the program outputs:
+
+Welcome, Manish Panday!
+What's happening?
+User Input
+    ↓
+"   manish panday   "
+    ↓
+.strip()
+    ↓
+"manish panday"
+    ↓
+.title()
+    ↓
+"Manish Panday"
+Today's Challenge
+Student Registration Validator
+
+You are building a simple student registration system.
+
+The program should collect basic student information and validate it before accepting the registration.
+
+Requirements
+
+Ask the user for:
+
+Full name
+Email address
+Country
+Age
+Step 1 — Clean the Name
+
+Remove unnecessary spaces from the beginning and end of the name.
+
+Then format the name using .title().
+
+For example:
+
+Input:
+   manish panday
+
+Output:
+Manish Panday
+Step 2 — Validate the Name
+
+The name must contain at least 3 characters.
+
+If the name is too short:
+
+Status: Invalid Name
+Step 3 — Validate Email
+
+For today's beginner-level validation, check whether the email contains:
+
+@
+
+and:
+
+.
+
+For example:
+
+manish@gmail.com
+
+Valid
+
+But:
+
+manishgmail.com
+
+Invalid
+
+Step 4 — Format Country
+
+Convert the country into title case.
+
+For example:
+
+nepal
+
+becomes:
+
+Nepal
+Step 5 — Validate Age
+
+The student must be between:
+
+13 and 100
+
+If the age is outside this range:
+
+Status: Invalid Age
+Registration Rules
+
+Your program should determine one final status.
+
+If the name is invalid:
+Invalid Name
+Otherwise, if the email is invalid:
+Invalid Email
+Otherwise, if the age is invalid:
+Invalid Age
+Otherwise:
+Registration Successful
+Sample Input
+Example 1
+Enter your full name:    manish panday
+Enter your email: manish@gmail.com
+Enter your country: nepal
+Enter your age: 19
+Expected Output
+========== STUDENT REGISTRATION ==========
+
+Name: Manish Panday
+Email: manish@gmail.com
+Country: Nepal
+Age: 19
+
+Status: Registration Successful
+
+==========================================
+Sample Input 2
+Enter your full name: MP
+Enter your email: manish@gmail.com
+Enter your country: Nepal
+Enter your age: 19
+
+Expected:
+
+========== STUDENT REGISTRATION ==========
+
+Name: Mp
+Email: manish@gmail.com
+Country: Nepal
+Age: 19
+
+Status: Invalid Name
+
+==========================================
+Sample Input 3
+Enter your full name: Manish Panday
+Enter your email: manishgmail.com
+Enter your country: Nepal
+Enter your age: 19
+
+Expected:
+
+========== STUDENT REGISTRATION ==========
+
+Name: Manish Panday
+Email: manishgmail.com
+Country: Nepal
+Age: 19
+
+Status: Invalid Email
+
+==========================================
+Sample Input 4
+Enter your full name: Manish Panday
+Enter your email: manish@gmail.com
+Enter your country: Nepal
+Enter your age: 10
+
+Expected:
+
+========== STUDENT REGISTRATION ==========
+
+Name: Manish Panday
+Email: manish@gmail.com
+Country: Nepal
+Age: 10
+
+Status: Invalid Age
+
+==========================================
+Constraints
+
+You may use:
+
+Variables
+input()
+int()
+if
+elif
+else
+Strings
+.strip()
+.lower()
+.title()
+len()
+in
+Comparison operators
+f-strings
+print()
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Sets
+Modules
+Regular expressions
+Exception handling
+
+We're deliberately keeping this within your current level.
+
+Hints
+Hint 1
+
+Clean the name immediately after receiving it.
+
+Think:
+
+input → strip → title
+Hint 2
+
+You can check the length using:
+
+len(name)
+Hint 3
+
+To check whether a character exists inside a string, Python allows:
+
+"@" in email
+Hint 4
+
+For the email, you need both @ and ..
+
+Think about which logical operator you need.
+
+Hint 5
+
+Don't print the entire registration receipt separately for every status.
+
+Determine:
+
+status
+
+first, then print the registration report.
+Bonus Challenge
+
+Add username validation.
+
+Ask:
+
+Enter your username:
+
+Rules:
+
+Username must be at least 5 characters
+Username must not contain spaces
+Username must be converted to lowercase
+
+Example:
+
+Manish123
+
+becomes:
+
+manish123
+
+If invalid:
+
+Invalid Username
+
+If everything is valid:
+
+Registration Successful
+Real-World Application
+
+String validation is everywhere in real software.
+
+For example:
+
+Registration systems
+Name
+Email
+Username
+Password
+Websites
+Search boxes
+Forms
+Comments
+Contact forms
+AI applications
+
+User input needs to be cleaned and validated before being sent to an API or AI model.
+
+Later, when you're building APIs with FastAPI, you'll see much more powerful validation systems—but the basic idea starts here.
+
+Common Mistakes
+
+Watch out for:
+
+Forgetting .strip().
+Checking the original name instead of the cleaned name.
+Using or when you actually need and.
+Forgetting that spaces count when using len().
+Forgetting to convert the country with .title().
+Accepting an email without @ or ..
+Printing different copies of the same receipt.
+Mixing up = and ==.
+Mini Quiz
+
+Don't answer these until you've attempted the challenge.
+
+1.
+
+What does .strip() do?
+
+2.
+
+What is the difference between .lower() and .title()?
+
+3.
+
+What does this expression check?
+
+"@" in email
+4.
+
+Why would we use and when checking whether an email contains both @ and .?
+
+5.
+
+What does len("Python") return?
+
+Difficulty Rating
+
+4.5/10
+
+This is slightly harder than Day 9 because you're now dealing with text processing and validation, not just numerical calculations.
+
+⏱ Estimated Time
+
+25–35 minutes
+
+Progress Tracker
+Completed Days: 9
+Current Day: 10
+Remaining Days: 1,085
+Completion: 0.82%
+Current Stage: Stage 1 — Python Fundamentals
+Skills You'll Unlock
+
+After completing Day 10:
+
+String manipulation
+.strip()
+.lower()
+.title()
+len()
+String membership with in
+Basic validation
+Combining text + numbers
+Multi-condition decision making
+Cleaner user input handling
+Mentor Challenge
+
+Don't worry about making the code perfect on your first attempt.
+
+Write it yourself, test at least 5 different inputs, deliberately try invalid data, and see whether your program behaves correctly.
+
+Then send me your Day 10 solution.
+
+I will review it line-by-line, find bugs, test edge cases, analyze your logic, and give you a professional score out of 100.
