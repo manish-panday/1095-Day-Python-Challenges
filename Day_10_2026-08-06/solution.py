@@ -7,29 +7,29 @@ name = full_name.strip()
 name = name.title()
 email_address = email_address.lower()
 
-validate_name = ""
+valid_name = ""
 if len(name) < 3:
-    validate_name = "Invalid Name"
+    valid_name = "Invalid Name"
 else:
-    validate_name = "Valid Name"
+    valid_name = "Valid Name"
 
-validate_email = ""
+valid_email = ""
 if "@" in email_address and "." in email_address:
-    validate_email = "Valid Email"
+    valid_email = "Valid Email"
 else:
-    validate_email = "Invalid Email"
+    valid_email = "Invalid Email"
 
 format_country = country.title()
 
-validate_age = ""
+valid_age = ""
 if age >= 13 and age <= 100:
-    validate_age = "Valid Age"
+    valid_age = "Valid Age"
 else:
-    validate_age = "Invalid Age"
+    valid_age = "Invalid Age"
 
 
 
-if validate_name == "Valid Name" and validate_email == "Valid Email" and validate_age == "Valid Age":
+if valid_name == "Valid Name" and valid_email == "Valid Email" and valid_age == "Valid Age":
     print("========== STUDENT REGISTRATION ==========")
     print()
     print(f"Name: {name}")
@@ -41,8 +41,8 @@ if validate_name == "Valid Name" and validate_email == "Valid Email" and validat
     print()
     print("==========================================")
 else: 
-    if validate_name == "Invalid Name":
-        print("========== STUDENT REGISTRATION ==========")
+    if valid_name == "Invalid Name":
+        print("========== INVALID NAME ==========")
         print()
         print(f"Name: {name}")
         print(f"Email: {email_address}")
@@ -52,8 +52,8 @@ else:
         print("Status: Invalid Name")
         print()
         print("==========================================")
-    elif validate_email == "Invalid Email":
-        print("========== STUDENT REGISTRATION ==========")
+    elif valid_email == "Invalid Email":
+        print("========== INVALID EMAIL ==========")
         print()
         print(f"Name: {name}")
         print(f"Email: {email_address}")
@@ -63,8 +63,8 @@ else:
         print("Status: Invalid Email")
         print()
         print("==========================================")
-    elif validate_age == "Invalid Age":
-        print("========== STUDENT REGISTRATION ==========")
+    elif valid_age == "Invalid Age":
+        print("========== INVALID AGE ==========")
         print()
         print(f"Name: {name}")
         print(f"Email: {email_address}")

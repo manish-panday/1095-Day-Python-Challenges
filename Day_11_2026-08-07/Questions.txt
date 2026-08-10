@@ -1,0 +1,366 @@
+Day 11 of 1095
+Today's Topic
+Number Classification & Multiple Conditions
+
+Today you'll practice making a program analyze a number using several different conditions.
+
+You'll work with:
+
+Comparison operators
+if / elif / else
+and
+or
+% modulo operator
+Positive/negative numbers
+Even/odd numbers
+Multiple conditions
+Learning Objective
+
+By the end of Day 11, you should understand:
+
+How the % operator works.
+How to determine whether a number is even or odd.
+How to classify numbers as positive, negative, or zero.
+How multiple conditions interact.
+How to organize several related decisions.
+Concept Explanation
+The Modulo % Operator
+
+The % operator gives you the remainder after division.
+
+For example:
+
+10 % 2
+
+Result:
+
+0
+
+Because:
+
+10 ÷ 2 = 5 remainder 0
+
+But:
+
+7 % 2
+
+gives:
+
+1
+
+because:
+
+7 ÷ 2 = 3 remainder 1
+
+Therefore:
+
+number % 2 == 0
+
+means the number is even.
+
+And:
+
+number % 2 != 0
+
+means the number is odd.
+
+Warm-up Example
+number = int(input("Enter a number: "))
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+If the user enters:
+
+8
+
+Output:
+
+Even
+Today's Challenge
+Number Analyzer
+
+Build a Python program that asks the user to enter one integer.
+
+Your program must analyze the number and report:
+
+Whether the number is positive, negative, or zero.
+Whether the number is even or odd.
+Whether the number is divisible by 5.
+Requirements
+
+Ask:
+
+Enter a number:
+
+Then determine the following.
+
+1️Number Type
+
+If:
+
+number > 0
+
+Status:
+
+Positive
+
+If:
+
+number < 0
+
+Status:
+
+Negative
+
+Otherwise:
+
+Zero
+Even or Odd
+
+If the number is divisible by 2:
+
+Even
+
+Otherwise:
+
+Odd
+Special Case
+
+Zero is mathematically even.
+
+So:
+
+0 → Even
+3️Divisible by 5
+
+If:
+
+number % 5 == 0
+
+then:
+
+Divisible by 5: Yes
+
+Otherwise:
+
+Divisible by 5: No
+Sample Input
+Enter a number: 25
+Expected Output
+========== NUMBER ANALYZER ==========
+
+Number: 25
+Type: Positive
+Even/Odd: Odd
+Divisible by 5: Yes
+
+=====================================
+Sample Input 2
+Enter a number: -10
+Expected Output
+========== NUMBER ANALYZER ==========
+
+Number: -10
+Type: Negative
+Even/Odd: Even
+Divisible by 5: Yes
+
+=====================================
+Sample Input 3
+Enter a number: 0
+
+Expected:
+
+========== NUMBER ANALYZER ==========
+
+Number: 0
+Type: Zero
+Even/Odd: Even
+Divisible by 5: Yes
+
+=====================================
+Sample Input 4
+Enter a number: 13
+
+Expected:
+
+========== NUMBER ANALYZER ==========
+
+Number: 13
+Type: Positive
+Even/Odd: Odd
+Divisible by 5: No
+
+=====================================
+Constraints
+
+Use only concepts you've learned so far:
+
+Variables
+input()
+int()
+print()
+if
+elif
+else
+Comparison operators
+%
+Logical operators
+f-strings
+
+Do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Modules
+Classes
+💡 Hints
+Hint 1
+
+Use % 2 to determine even/odd.
+
+Hint 2
+
+Use % 5 to determine divisibility by 5.
+
+Hint 3
+
+Don't confuse:
+
+%
+
+with:
+
+/
+Hint 4
+
+Create variables such as:
+
+number_type
+parity
+divisible_by_5
+
+and determine their values before printing.
+
+Hint 5
+
+Try to print the analyzer report only once, rather than repeating the entire output for every condition.
+
+Bonus Challenge
+
+Add another classification:
+
+Divisible by 3
+
+Your program should display:
+
+Divisible by 3: Yes
+
+or:
+
+Divisible by 3: No
+
+Then add:
+
+Divisible by both 3 and 5
+
+For example:
+
+15
+
+should produce:
+
+Divisible by 3: Yes
+Divisible by 5: Yes
+Divisible by both: Yes
+
+But:
+
+10
+
+should produce:
+
+Divisible by 3: No
+Divisible by 5: Yes
+Divisible by both: No
+
+This will give you extra practice with and.
+
+Real-World Application
+
+Number classification is used in:
+
+Banking calculations
+Billing systems
+Scheduling systems
+Inventory systems
+Algorithms
+Data validation
+Computer science algorithms
+Machine-learning preprocessing
+
+The % operator is especially important when working with algorithms and data structures later in your journey.
+
+Common Mistakes
+
+Watch out for:
+
+Using / instead of %.
+Forgetting that 0 is even.
+Using number % 2 == 1 to detect every odd number.
+Forgetting negative numbers.
+Repeating the same print() block.
+Confusing = with ==.
+Mini Quiz
+
+Don't answer until you've attempted the challenge.
+
+What does 17 % 2 return?
+What does 20 % 5 return?
+Is 0 even or odd?
+What does % calculate?
+Why is number % 2 == 0 useful for finding even numbers?
+Difficulty Rating
+
+4.5/10
+
+Estimated Time
+
+20–30 minutes
+
+Progress Tracker
+Completed Days: 10
+Current Day: 11
+Remaining Days: 1,084
+Completion: 0.91%
+Current Stage: Stage 1 — Python Fundamentals
+Skills You'll Practice
+% modulo operator
+Number classification
+Even/odd logic
+Divisibility
+Multiple conditions
+Boolean logic
+Variables
+Clean formatted output
+Problem decomposition
+Mentor Rule
+
+Don't look for the solution. Build the logic yourself.
+
+Before coding, write down what should happen for:
+
+25
+-10
+0
+13
+30
+
+Then turn those rules into Python.
+
+Send me your Day 11 solution when you're finished, and I'll review it like a professional code reviewer.
