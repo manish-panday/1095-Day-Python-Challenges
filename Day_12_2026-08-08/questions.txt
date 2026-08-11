@@ -1,0 +1,404 @@
+Day 12 of 1095
+Today's Topic
+Shopping Cart — Multiple Products & Discount Logic
+
+Today we're going to combine several concepts you've already learned:
+
+Variables
+User input
+int() / float()
+Arithmetic
+if / elif / else
+Comparison operators
+Logical operators
+%
+Formatted output
+
+We're also going to introduce a new problem-solving skill: calculating a bill from multiple items.
+
+Learning Objective
+
+After completing Day 12, you should be able to:
+
+Calculate subtotals.
+Apply conditional discounts.
+Calculate tax.
+Determine a final payable amount.
+Handle different purchasing conditions.
+Design a program from requirements without copying a solution.
+Concept Explanation
+
+Imagine a customer buys:
+
+Laptop Bag → Rs. 2,000 × 2
+Mouse      → Rs. 1,000 × 1
+Keyboard   → Rs. 3,000 × 1
+
+You need to calculate:
+
+Item Price × Quantity
+          ↓
+      Subtotal
+          ↓
+       Discount
+          ↓
+      Tax
+          ↓
+    Final Amount
+
+This is the basic logic behind many real-world billing systems.
+
+Warm-up Example
+
+Suppose:
+
+Product price = 500
+Quantity = 3
+
+Then:
+
+500 × 3 = 1500
+
+In Python:
+
+total = price * quantity
+
+You already know this from Day 9.
+
+Today we're going to make the logic more interesting.
+
+Today's Challenge
+Mini Shopping Bill Generator
+
+Create a Python program for a small shop.
+
+The program should ask the customer for information about three products.
+
+For each product, ask:
+
+Product name
+Product price
+Quantity
+
+Then calculate the customer's complete bill.
+
+Requirements
+Step 1 — Customer Information
+
+Ask:
+
+Enter customer name:
+Step 2 — Product 1
+
+Ask:
+
+Enter product 1 name:
+Enter product 1 price:
+Enter product 1 quantity:
+
+Calculate:
+
+product 1 total = price × quantity
+Step 3 — Product 2
+
+Ask the same information.
+
+Step 4 — Product 3
+
+Ask the same information.
+
+Step 5 — Calculate Subtotal
+
+Add the three product totals.
+
+For example:
+
+Product 1 = 1000
+Product 2 = 2000
+Product 3 = 1500
+
+Subtotal = 4500
+Step 6 — Apply Discount
+
+Use these rules:
+
+Subtotal	Discount
+Rs. 10,000 or more	15%
+Rs. 5,000–9,999	10%
+Rs. 2,000–4,999	5%
+Below Rs. 2,000	0%
+
+Calculate the actual discount amount.
+
+For example:
+
+Subtotal = 6000
+Discount = 10%
+
+Discount amount = 600
+Step 7 — Calculate Amount After Discount
+
+Formula:
+
+Subtotal - Discount
+Step 8 — Calculate Tax
+
+Apply 13% VAT to the amount after discount.
+
+Formula:
+
+tax = discounted_amount × 13 / 100
+Step 9 — Calculate Final Amount
+
+Formula:
+
+final_amount = discounted_amount + tax
+Expected Receipt
+
+Your program should produce something similar to:
+
+========== SHOPPING BILL ==========
+
+Customer: Manish Panday
+
+Product 1: Mouse
+Price: Rs. 1000
+Quantity: 2
+Total: Rs. 2000
+
+Product 2: Keyboard
+Price: Rs. 2500
+Quantity: 1
+Total: Rs. 2500
+
+Product 3: Headphones
+Price: Rs. 1500
+Quantity: 1
+Total: Rs. 1500
+
+-----------------------------------
+
+Subtotal: Rs. 6000
+Discount: 10%
+Discount Amount: Rs. 600
+
+Amount After Discount: Rs. 5400
+
+VAT: 13%
+VAT Amount: Rs. 702
+
+-----------------------------------
+
+Final Amount: Rs. 6102
+
+==================================
+Sample Input
+Enter customer name: Manish Panday
+
+Enter product 1 name: Mouse
+Enter product 1 price: 1000
+Enter product 1 quantity: 2
+
+Enter product 2 name: Keyboard
+Enter product 2 price: 2500
+Enter product 2 quantity: 1
+
+Enter product 3 name: Headphones
+Enter product 3 price: 1500
+Enter product 3 quantity: 1
+Expected calculations
+Product 1 = 1000 × 2 = 2000
+Product 2 = 2500 × 1 = 2500
+Product 3 = 1500 × 1 = 1500
+
+Subtotal = 6000
+
+Discount = 10%
+Discount amount = 600
+
+After discount = 5400
+
+VAT = 702
+
+Final = 6102
+Constraints
+
+For this challenge, do not use:
+
+Loops
+Functions
+Lists
+Dictionaries
+Classes
+Modules
+
+Yes, you're going to notice that asking for three products creates repetition.
+
+That's intentional.
+
+I want you to experience the problem of repeated code before we later learn better ways to solve it.
+
+Hints
+Hint 1
+
+Calculate each product separately:
+
+price × quantity
+
+Then add them.
+
+Hint 2
+
+Create variables such as:
+
+product1_total
+product2_total
+product3_total
+subtotal
+discount_amount
+tax
+final_amount
+Hint 3
+
+Use your Day 9 discount logic.
+
+But be careful with the boundary values:
+
+1999
+2000
+4999
+5000
+9999
+10000
+Hint 4
+
+Don't calculate VAT from the original subtotal.
+
+VAT should be calculated after the discount.
+
+Hint 5
+
+Use one final receipt instead of creating separate print blocks for every discount condition.
+
+Bonus Challenge
+
+Add a membership discount.
+
+Ask:
+
+Are you a member? (yes/no):
+
+Rules:
+
+Normal customer → existing discount
+Member → additional 5% discount after the first discount
+
+For example:
+
+Subtotal = 6000
+First discount = 10%
+
+After first discount = 5400
+
+Member discount = 5%
+
+Member discount amount = 270
+
+Final taxable amount = 5130
+
+Then calculate VAT.
+
+Real-World Application
+
+This type of logic is used in:
+
+Supermarket billing systems
+E-commerce websites
+POS systems
+Restaurant billing
+Inventory software
+Online shopping carts
+Accounting software
+
+Later, when you learn lists, loops, functions, and databases, you'll be able to turn today's small program into a much more professional shopping system.
+
+Common Mistakes
+
+Watch out for:
+
+Multiplying the wrong price and quantity.
+Adding the wrong product totals.
+Applying the discount to only one product.
+Calculating VAT before discount.
+Using the wrong discount percentage.
+Incorrect boundary conditions.
+Accidentally using the original subtotal for VAT.
+Repeating the entire receipt unnecessarily.
+Forgetting that 13% means 13 / 100.
+Mini Quiz
+
+Don't answer these until you've attempted the challenge.
+
+1.
+
+If a product costs Rs. 500 and quantity is 4, what is the total?
+
+2.
+
+What is the discount on a subtotal of Rs. 5,000?
+
+3.
+
+Should VAT be calculated before or after the discount?
+
+4.
+
+What is 13% of Rs. 2,000?
+
+5.
+
+If the subtotal is Rs. 1,500, what discount percentage applies?
+
+Difficulty Rating
+
+5/10 
+
+This is your first challenge where you'll combine multiple calculations into one complete business workflow.
+
+Estimated Time
+
+30–45 minutes
+
+Progress Tracker
+Completed Days: 11
+Current Day: 12
+Remaining Days: 1,083
+Completion: 1.00%
+Current Stage: Stage 1 — Python Fundamentals
+Skills You'll Practice
+Multiple user inputs
+Arithmetic operations
+Variables
+Percentage calculations
+Conditional discounts
+Tax calculations
+Business logic
+Boundary testing
+Formatted reports
+Problem decomposition
+Your Day 12 Mission
+
+Build the entire shopping bill yourself.
+
+Don't worry about making it beautiful initially. First make the logic correct.
+
+Then test it with at least:
+
+Subtotal < 2000
+Subtotal = 2000
+Subtotal = 5000
+Subtotal = 10000
+
+Send me your code when you're finished.
+
+I won't give you the solution unless you get stuck—I’ll review your logic first.
